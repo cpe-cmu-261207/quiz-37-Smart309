@@ -4,7 +4,7 @@ import Reply from "../components/Reply";
 import { comments } from "../libs/comments";
 
 export default function Home() {
-  const postOwn = [{ comment: comments, likeNum: 159, reply: comments }];
+  const postOwn = [{ comment: comments, likeNum: 159 }];
   return (
     <div
       style={{ minHeight: "100vh", backgroundColor: "ghostwhite" }}
@@ -17,7 +17,7 @@ export default function Home() {
       >
         {/* <PostOwner /> */}
         {postOwn.map((x) => (
-          <PostOwner reply={x.comment} like={x.likeNum} />
+          <PostOwner like={x.likeNum} reply={x.comment} />
         ))}
       </div>
     </div>

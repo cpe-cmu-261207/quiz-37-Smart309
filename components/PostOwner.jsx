@@ -28,9 +28,9 @@ export default function PostOwner(props) {
         <Comment
           name={x.username}
           img={x.userImagePath}
-          text={x.userImagePath}
+          text={x.commentText}
           like={x.likeNum}
-          reply={x.repl}
+          reply={x.replies}
         />
       ))}
     </div>
